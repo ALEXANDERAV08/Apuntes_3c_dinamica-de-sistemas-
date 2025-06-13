@@ -1,5 +1,5 @@
 ### nestor alexander avila rojas 
-# 1 Función de transferencia 14/05/2025
+# 1. Función de transferencia 14/05/2025
 Una función de transferencia es una herramienta matemática que se utiliza en ingeniería y control de sistemas para describir la relación entre la entrada y la salida de un sistema dinámico lineal, en el dominio de Laplace.
 
 $$G(s) = \frac{Y(s)}{U(s)}$$
@@ -22,7 +22,7 @@ $m\ddot{x} + b\dot{x} + kx = F(t)$
 
 $ms^2X(s) + bsX(s) + kX(s) = F(s) \Rightarrow G(s) = \frac{X(s)}{F(s)} = \frac{1}{ms^2 + bs + k}$
 
-### 1.1 Clasificaciones 
+### 1.1. Clasificaciones 
 Las funciones de transferencia se pueden expresar de diferentes maneras, esto dependera de su denominador y numerador, teniendo tres casos particulares los cuales son 
 
 [![image.png](https://i.postimg.cc/CKXqw3Jn/image.png)](https://postimg.cc/GBP2QSWb)
@@ -39,7 +39,7 @@ $\frac{s^2 - 1}{s + 1} \quad \text{(impropia)}$
 
 $\frac{s - 1}{s + 1} \quad \text{(bipropia)}$
 
-## 2 Zeros en una funcion de transferencia 
+## 2. Zeros en una funcion de transferencia 
 Para la solucion de los zeros debemos igualar el numerador a 0 para obter los valores de (S), si de casualidad el numerador se hace 0 toda la funcion de transferencia se vuelve 0 de ahi el nombre, la solucion de (S) pueden ser numeros reales o complejos esto con el fin de ubicarlos en el plano cartesiano 
 
 $G(s) = \frac{Y(s)}{U(s)} = \frac{3s-1}{s^2+3s+2} = \frac{N(s)}{D(s)}$
@@ -54,7 +54,7 @@ $s = \frac{1}{3}$
 
 [![image.png](https://i.postimg.cc/jjbjvR8X/image.png)](https://postimg.cc/YvdkCBBG)
 
-## 2.1 Polos en una funcion de transferencia
+## 2.1. Polos en una funcion de transferencia
 >🔑En el caso de los polos lo que deberemos hacer es igualar a cero el denomidador de la funcion de transferencia para hallar "S" estos valores tambien puden ser reales o complejos esto con la facilidad de poderlos graficar en el plano cartesiano
 
 ### ¿Por qué son importantes los polos?
@@ -120,7 +120,7 @@ $$s = s_0 \quad \text{con multiplicidad} > 1$$
 
 **Característica:** generan una respuesta del tipo $t^n e^{s_0 t}$ , más lenta que polos reales simples.
 
-## 3 Teorema del valor final 
+## 3. Teorema del valor final 
 >🔑El Teorema del Valor Final es una herramienta en el análisis de sistemas dinámicos (especialmente en el dominio de Laplace) que permite encontrar el valor al que tiende una función en el tiempo cuando t→∞, usando su transformada de Laplace.
 
 $\lim_{t \to \infty} f(t) = \lim_{s \to 0} s F(s)$
@@ -141,32 +141,32 @@ $\lim_{s \to 0} sY(s) = \lim_{s \to 0} s \cdot \frac{\frac{4}{s}}{5s + 1}$
 
 $\lim_{s \to 0} \frac{4}{5s+1} = 4$
 
-## 4 Entradas de prueba de un sistema 
+## 4. Entradas de prueba de un sistema 
 >🔑En este caso la solución de una ecuación diferencial depende de la entrada, la respuesta de un sistema también.Es muy difícil conocer las señales que están ocurriendo en un sistema, ya que depende de muchos factores como ruido, tipo de señales, ambiente, entre otros, además, el sistema de control debe diseñarse para que funcione ante cualquier señal.
 En control, se utilizan diferentes tipos de señales de prueba para evaluar el desempeño de un sistema.
 
-### 4.1 Entrada escalon 
+### 4.1. Entrada escalon 
 >🔑Un cambio abrupto en la entrada desde cero a un valor constante A en t=0, Evalúa la respuesta transitoria y el error en estado estacionario de un sistema (ej: tiempo de asentamiento, sobrepico).
 
 **Expresión matemática:**
 
 $\mathcal{L}(u(t)) = \frac{A}{s}$
 
-### 4.2 Entrada Rampa 
+### 4.2. Entrada Rampa 
 >🔑Una señal que aumenta linealmente con el tiempo, Analiza la capacidad del sistema para seguir señales que cambian continuamente (ej: sistemas de seguimiento como radares o motores).
 
 **Expresión matemática:**
 
 $\mathcal{L}\{x(t)\} = \frac{A}{s^2}$
 
-### 4.3 Entrada Parabola
+### 4.3. Entrada Parabola
 >🔑Una señal que varía cuadráticamente con el tiempo, Estudia sistemas que requieren alta precisión para aceleraciones (ej: cohetes, satélites).
 
 **Expresión matemática:**
 
 $\mathcal{L}\{r(t)\} = \frac{A}{s^3}$
 
-## 5 📚Ejercicios
+## 5. 📚Ejercicios
 
 #### 📚 Ejercicio 1
 
